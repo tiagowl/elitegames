@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastrar Game</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <div class="navegacao">
+        <img src="../img/logo.png" style="margin-right: 1700px;" >
+        <label style="color: white; margin-left: 460px;position:absolute;margin-top: -40px;font-family:sans-serif;font-size:30px;" >MyAdmin</label>
+    </div>
+    <div class="sub-navegacao"></div><br>
+
+    <form class="formulario" action="../controller/salvar_game.php" method="post" style="margin-top: 300px;margin-left: 70px;" enctype="multipart/form-data" >
+        <label>Nome</label><br>
+        <input type="text" name="nome"><br><br>
+        <label>Categoria</label><br>
+        <input type="text" name="categoria"><br><br>
+        <label>Console</label><br>
+        <input type="text" name="console"><br><br>
+        <label>Preço</label><br>
+        <input type="text" name="preco"><br><br>
+        <label>Criador</label><br>
+        <input type="text" name="criadora"><br><br>
+        <label>Plataforma</label><br>
+        <input type="text" name="plataforma"><br><br>
+        <label>Imagem</label><br>
+        <input type="file" name="imagem"><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+
+</body>
+</html>
