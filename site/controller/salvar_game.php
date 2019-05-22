@@ -8,7 +8,7 @@ if($_POST){
     $console = $_POST['console'];
     $preco = $_POST['preco'];
     $plataforma = $_POST['plataforma'];
-    $criadora = $_POST['criadora'];
+    $criador = $_POST['criador'];
     $imagem = $_FILES['imagem'];
 
     if(isset($_FILES['imagem'])){
@@ -18,13 +18,16 @@ if($_POST){
         move_uploaded_file($_FILES['imagem']['tmp_name'], $diretorio.$novo_nome);
 
         $sql = "INSERT INTO games 
-        (nome, categoria, console, preco, plataforma, criadora, imagem)
+        (nome, categoria, console, preco, criador, plataforma, imagem)
         VALUES
-        ('$nome', '$categoria', '$console', '$preco', '$plataforma', '$criadora', '$novo_nome')";
+        ('$nome', '$categoria', '$console', '$preco', '$criador', '$plataforma', '$novo_nome')";
         
-        $conn = new PDO("mysql:dbname=elitegames;host=localhost", "root","");
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
+        if($connect->query($sql) === TRUE){
+            echo 'inserido com sucesso';
+
+            header('Location: ../index.php');
+        }
+       
     }
 }
 

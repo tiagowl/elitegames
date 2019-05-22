@@ -81,7 +81,6 @@
 }
 
 .games{
-    border: solid  rgb(235, 231, 231) 3px;
     background-color: white;
     border-radius: 5px;
     margin-left: 500px;
@@ -98,7 +97,6 @@
 }
 
 .game{
-    border: solid  rgb(235, 231, 231) 3px;
     background-color: white;
     border-radius: 5px;
     height: 290px;
@@ -144,3 +142,5 @@
 .formulario label{
     font-family: sans-serif;
 }
+
+
