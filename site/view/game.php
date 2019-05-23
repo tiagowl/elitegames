@@ -47,7 +47,7 @@
         echo "<label style='margin-top: 500px; position: absolute;margin-left:600px;font-size: 20px ' >".$row['criador']."</label>";
         echo "<img src='../img/".$row['imagem']."' style='width:320px;height:370px;position:absolute; margin-left: 200px;margin-top: 300px;'>";
         echo "<label style='margin-left: 600px; position: absolute; font-size: 40px; margin-top: 400px'> R$ ".$row['preco']."</label>";
-        echo "<button style='margin-left:870px; margin-top: 335px; height: 50px; width: 100px' >Comprar</button>";
+        echo "<button style='margin-left:600px; margin-top: 597px; height: 60px; width: 200px; background-color: rgb(194, 25, 25);border: 3px solid black;border-radius: 10px;' >Comprar</button>";
     }
 ?>
 </body>
